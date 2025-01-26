@@ -1,0 +1,15 @@
+This AWS Lambda function identifies unused EBS snapshots that are no longer linked to active EC2 instances and deletes them to optimize storage costs.
+
+Process:
+Fetches all EBS snapshots owned by the account (self).
+Retrieves a list of active EC2 instances (running and stopped).
+Checks each snapshot's associated volume to determine if it's linked to an active instance.
+Deletes stale snapshots to reduce storage costs and improve AWS resource efficiency.
+Would you like me to add Python code for this Lambda function? 🚀
+
+
+
+
+
+
+
